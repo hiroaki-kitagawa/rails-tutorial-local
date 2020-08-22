@@ -47,7 +47,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
 
   test "login without remembering" do
     # cookieを保存してログイン
-    log_in_as(@user, remember_me: '1')
+    log_in_as(@user, rembmer_me: '1')
     delete logout_path
     # cookieを削除してログイン
     log_in_as(@user, remember_me: '0')
